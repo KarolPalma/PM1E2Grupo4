@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PM1E2Grupo4"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ActivityActualizar"></activity>
+        <activity android:name=".ActivityEdit"></activity>
         <activity android:name=".ActivityListContactos" />
         <activity android:name=".MainActivity">
             <intent-filter>

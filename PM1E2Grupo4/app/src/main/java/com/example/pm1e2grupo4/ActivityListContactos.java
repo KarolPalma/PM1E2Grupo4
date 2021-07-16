@@ -2,6 +2,8 @@ package com.example.pm1e2grupo4;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -29,6 +31,7 @@ public class ActivityListContactos extends AppCompatActivity {
     List<Contacto> cantactoList;
     ArrayList<String> arrayListContactos;
     EditText txtBuscar;
+    private String idCont;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +42,7 @@ public class ActivityListContactos extends AppCompatActivity {
         arrayListContactos = new ArrayList<String>();
         txtBuscar = (EditText) findViewById(R.id.txtBuscar);
         Button btnVolver = (Button) findViewById(R.id.btnVolver2);
-        Button btnActualizar = (Button) findViewById(R.id.btnActualizar);
+        Button btnEditar = (Button) findViewById(R.id.btnEditar);
 
         //LISTA DE CONTACTOS
         SendRequest();
@@ -52,11 +55,13 @@ public class ActivityListContactos extends AppCompatActivity {
             }
         });
 
-        btnActualizar.setOnClickListener(new View.OnClickListener() {
+        //BOTON EDITAR CONTACTO
+        btnEditar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent pantallaActualizar = new Intent(getApplicationContext(), ActivityActualizar.class);
-                startActivity(pantallaActualizar);
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ActivityEdit.class);
+                intent.putExtra("idCont", String.valueOf(idCont));
+                startActivity(intent);
             }
         });
     }
