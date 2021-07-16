@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -37,11 +36,11 @@ public class ActivityEdit extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
 
-        txtNombre = (EditText) findViewById(R.id.txtNombreContacto2);
-        txtTelefono = (EditText) findViewById(R.id.txtTelefonoContacto2);
-        txtLongitud = (EditText) findViewById(R.id.txtLongitudContacto2);
-        txtLatitud = (EditText) findViewById(R.id.txtLatitudContacto2);
-        Button btnVolver2 = (Button) findViewById(R.id.btnVolver2);
+        txtNombre = (EditText) findViewById(R.id.txtNombreContacto);
+        txtTelefono = (EditText) findViewById(R.id.txtTelefonoContacto);
+        txtLongitud = (EditText) findViewById(R.id.txtLongitud);
+        txtLatitud = (EditText) findViewById(R.id.txtLatitud);
+        Button btnVolver2 = (Button) findViewById(R.id.btnListarContactos);
         Button btnELiminar = (Button) findViewById(R.id.btnEliminar);
 
         Intent intent = getIntent();

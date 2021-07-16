@@ -44,7 +44,7 @@
                 android:layout_marginStart="133dp"
                 android:layout_marginEnd="133dp"
                 android:layout_marginBottom="9dp"
-                app:layout_constraintBottom_toTopOf="@+id/btnActualizarFoto"
+                app:layout_constraintBottom_toTopOf="@+id/btnTomarFoto"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/logo"
@@ -52,7 +52,7 @@
                 tools:srcCompat="@tools:sample/avatars" />
 
             <Button
-                android:id="@+id/btnActualizarFoto"
+                android:id="@+id/btnTomarFoto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
@@ -65,7 +65,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/imgFoto" />
 
             <TextView
-                android:id="@+id/lblNombre2"
+                android:id="@+id/lblNombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -79,7 +79,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/txtNombreContacto2"
+                android:id="@+id/txtNombreContacto"
                 android:layout_width="317dp"
                 android:layout_height="46dp"
                 android:layout_marginLeft="40dp"
@@ -93,7 +93,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/label" />
 
             <TextView
-                android:id="@+id/lblTelefono2"
+                android:id="@+id/lblTelefono"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -107,7 +107,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/txtTelefonoContacto2"
+                android:id="@+id/txtTelefonoContacto"
                 android:layout_width="317dp"
                 android:layout_height="46dp"
                 android:layout_marginLeft="40dp"
@@ -121,7 +121,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/label" />
 
             <TextView
-                android:id="@+id/lblLongitud2"
+                android:id="@+id/lblLongitud"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -135,7 +135,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/txtLongitudContacto2"
+                android:id="@+id/txtLongitud2"
                 android:layout_width="246dp"
                 android:layout_height="26dp"
                 android:layout_marginLeft="110dp"
@@ -150,7 +150,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/label" />
 
             <TextView
-                android:id="@+id/lblLatitud2"
+                android:id="@+id/lblLatitud"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -164,7 +164,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/txtLatitudContacto2"
+                android:id="@+id/txtLatitud"
                 android:layout_width="246dp"
                 android:layout_height="26dp"
                 android:layout_marginLeft="110dp"
@@ -179,7 +179,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/label" />
 
             <Button
-                android:id="@+id/btnActualizar"
+                android:id="@+id/btnSalvar"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="35dp"
@@ -205,7 +205,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/txtLongitud" />
 
             <Button
-                android:id="@+id/btnVolver2"
+                android:id="@+id/btnListarContactos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="160dp"
