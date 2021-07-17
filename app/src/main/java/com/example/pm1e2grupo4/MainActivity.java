@@ -16,7 +16,6 @@ import android.graphics.Bitmap;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.provider.Settings;
@@ -41,7 +40,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
-import java.lang.reflect.Array;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.List;
@@ -69,9 +67,9 @@ public class MainActivity extends AppCompatActivity {
         txtLatitud = (TextView) findViewById(R.id.txtLatitud);
         txtLongitud = (TextView) findViewById(R.id.txtLongitud);
         Button btnTomarFoto = (Button) findViewById(R.id.btnTomarFoto);
-        Button btnSalvar = (Button) findViewById(R.id.btnSalvar);
+        Button btnSalvar = (Button) findViewById(R.id.btnGuardar);
         Button btnListarContactos = (Button) findViewById(R.id.btnListarContactos);
-        contacto = new Contacto("","","","","","");
+        contacto = new Contacto("","","","","","", "");
         checkGPS();
 
         //BOTON TOMAR FOTO
@@ -90,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         //BOTON LISTAR CONTACTOS
         btnListarContactos.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
 
     //FUNCIONES REALCIONADAS A LA TOMA DE LA FOTOGRAFIA
     private void permisos() {
@@ -242,7 +240,6 @@ public class MainActivity extends AppCompatActivity {
                 contacto.setTelefono(txtTelefonoContacto.getText().toString());
                 JSONObject object = new JSONObject();
                 String url = RestApiMethods.ApiCreateUrl;
-                //String url = "http://18.116.112.28:1880/api/contacto/create";
                 try
                 {
                     object.put("nombre",contacto.getNombre());

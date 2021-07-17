@@ -37,7 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnListarContactos" />
+        app:layout_constraintTop_toBottomOf="@+id/btnVolver" />
 
     <Button
         android:id="@+id/btnUbicacion"
@@ -70,11 +70,11 @@
         app:layout_constraintTop_toBottomOf="@+id/LinearLayout" />
 
     <Button
-        android:id="@+id/btnListarContactos"
+        android:id="@+id/btnVolver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:backgroundTint="#2B8A1B"
+        android:backgroundTint="#2778CD"
         android:text="Volver"
         app:layout_constraintBottom_toTopOf="@+id/txtBuscar"
         app:layout_constraintEnd_toEndOf="parent"
